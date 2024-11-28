@@ -1,0 +1,47 @@
+.basic-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+
+    color: white;
+
+    .header-row {
+        display: flex;
+
+        border-bottom: 1px solid white;
+        font-size: 2rem;
+
+        .header-row-cell {
+            flex: 1;
+
+            font-weight: bold;
+            padding: 20px 10px;
+
+            &:not(:last-child) {
+                border-right: 1px solid white;
+            }
+        }
+    }
+
+    .table-data-row {
+        display: flex;
+
+        font-size: 1.5rem;
+
+        .table-data-cell {
+            flex: 1;
+
+            padding: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:not(:last-child) {
+                border-right: 1px solid white;
+            }
+        }
+
+        &:nth-child(odd) {
+            background-color: rgb(0, 68, 0);
+        }
+    }
+}
