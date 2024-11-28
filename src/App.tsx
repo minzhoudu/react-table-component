@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './App.css';
 
-import { BasicTable, ColumnDefinition } from './BasicTable/BasicTable';
+import { BasicTable, ColumnDefinition } from './components/BasicTable/BasicTable';
 
 type User = {
     name: string;

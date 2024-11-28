@@ -8,6 +8,7 @@
     justify-content: center;
 }
 
+/* Rewriting default styles for the table */
 .my-table {
     border-radius: 10px;
 
